@@ -1,0 +1,8 @@
+<!-- partial for showing prospect info -->
+<tr>
+  <td><%= link_to prospect.name, prospect %></td>
+  <td><%= prospect.email %></td>
+  <td><%= link_to 'Show', prospect %></td>
+  <td><%= link_to 'Edit', edit_prospect_path(prospect) %></td>
+  <td><%= link_to 'Delete', prospect, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+</tr>       

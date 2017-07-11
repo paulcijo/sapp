@@ -1,0 +1,26 @@
+<!-- partial for showing contacts -->
+
+<h3 class="box-title">Recent Contacts</h3>
+  	<div class="table-responsive">
+      	<table class="table">
+          	<thead>
+              	<tr>
+                  	<th>NAME</th>
+                  	<th>EMAIL</th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                </tr>
+            </thead>
+        <tbody>
+
+			<tr>
+			  <td><%= link_to prospect.name, prospect %></td>
+			  <td><%= prospect.email %></td>
+			  <td><%= link_to 'Show', prospect %></td>
+			  <td><%= link_to 'Edit', edit_prospect_path(prospect) %></td>
+			  <td><%= link_to 'Delete', prospect, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+			</tr>
+        </tbody>
+    </table>
+</div>
