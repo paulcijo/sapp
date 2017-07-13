@@ -13,4 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
+//= require waves
+//= require custom
+//= require dashboard1
+//= require morris-data
+//= require toastr
+//= require waves
 //= require_tree .
